@@ -1,0 +1,15 @@
+<h1> Lista de carros </h1>
+    <table class="table">
+    <thead class="thead-dark">
+        <tr>
+        <th scope="col">#</th>
+        <th scope="col">Placa</th>
+        <th scope="col">Color</th>
+        <th scope="col">Modelo</th>
+        </tr>
+    </thead>
+    <tbody>
+        <%= render @car %>
+    </tbody>
+    </table>
+<%= link_to 'Nuevo carro', new_car_path %>

@@ -1,0 +1,15 @@
+<h1> Datos de celular </h1>
+    <dl>
+        <dt>Marca/dt>
+        <dd><%= @phone.marca %></dd>
+
+        <dt>Color</dt>
+        <dd><%= @phone.color %></dd>
+
+        <dt>Modelo</dt>
+        <dd><%= @phone.modelo %></dd>
+    </dl>
+<%= image_tag @phone.avatar_url if @phone.avatar? %>
+    <hr>
+<%= link_to "Lista de Celulares", phones_path %> |
+<%= link_to "Editar", edit_phone_path %>
